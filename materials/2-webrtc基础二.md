@@ -121,3 +121,25 @@ tips：使用 CSS 渲染时，底层调用的还是 OpenGL/Metal/... 等底层�
 ### 从视频中获取图片
 
 ### 采集音频数据
+
+### MediaStream
+
+1. 在 WebRTC 中，音视频有流和轨的概念。流中包含轨，如：音频轨和视频轨。
+
+#### 常用的方法
+
+1. MediaStream.addTrack()
+
+2. MediaStream.removeTrack()
+
+3. MediaStream.getVideoTracks()
+
+4. MediaStream.getAudioTracks()
+
+#### 相关的事件
+
+1. MediaStream.onaddtrack
+
+2. MediaStream.onremovetrack
+
+3. MediaStream.onended，当流结束的时候。
